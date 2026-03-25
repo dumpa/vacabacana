@@ -9,13 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #2c3e50; /* Un azul grisáceo sobrio */
-            --secondary-color: #e67e22; /* Un naranja cálido */
-            --background-color: #f8f9fa;
-            --text-color: #333;
-            --light-text-color: #ffffff;
+            /* Colores extraídos del logo */
+            --primary-yellow: #FFD200; /* Amarillo vibrante del fondo */
+            --primary-brown: #4A3B2A;  /* Marrón oscuro para texto y detalles */
+            --accent-brown: #8B5A2B;   /* Marrón más claro para acentos */
+            --bg-color: #FAFAFA;       /* Fondo casi blanco para secciones */
+            --text-color: #333333;
             --max-width: 800px;
-            --border-radius: 8px;
+            --border-radius: 12px;
         }
 
         body {
@@ -23,10 +24,9 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: var(--background-color);
+            background-color: var(--primary-yellow); /* Fondo principal amarillo */
             color: var(--text-color);
             -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
         }
 
         .container {
@@ -35,129 +35,40 @@
             padding: 20px;
         }
 
-        /* Header */
+        /* Header con fondo amarillo */
         header {
             text-align: center;
             padding: 40px 0;
-            border-bottom: 1px solid #ddd;
+            /* No necesitamos borde inferior si el fondo es amarillo, pero podemos usarlo para separar si el contenido es blanco */
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+        }
+
+        .logo-container img {
+            max-width: 250px; /* Ajusta este tamaño según necesites */
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         header h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3rem;
+            font-size: 2.5rem;
             margin: 0;
-            color: var(--primary-color);
+            color: var(--primary-brown);
             letter-spacing: 1px;
+            text-transform: uppercase;
         }
 
         header p.tagline {
             font-size: 1.1rem;
-            color: #777;
-            margin-top: 10px;
+            color: var(--primary-brown);
+            margin-top: 5px;
+            font-weight: 600;
         }
 
         /* Main Content */
         main {
-            padding: 40px 0;
-        }
-
-        section {
-            margin-bottom: 40px;
-            padding: 25px;
-            background-color: #fff;
-            border-radius: var(--border-radius);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-        }
-
-        h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.8rem;
-            color: var(--primary-color);
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 10px;
-            margin-top: 0;
-        }
-
-        p {
-            margin-bottom: 1rem;
-        }
-
-        a {
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            font-size: 0.9rem;
-            color: #888;
-            border-top: 1px solid #ddd;
-        }
-        
-        /* Responsive */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2.2rem;
-            }
-            .container {
-                padding: 15px;
-            }
-            section {
-                padding: 20px;
-            }
-        }
-
-    </style>
-</head>
-<body>
-
-    <header>
-        <div class="container">
-            <h1>Vacabacana</h1>
-            <p class="tagline">Microfilantropía para generar felicidad.</p>
-        </div>
-    </header>
-
-    <main>
-        <div class="container">
-            <section id="que-es">
-                <h2>¿Qué es esto?</h2>
-                <p>
-                    Vacabacana es una fórmula simple de generosidad directa. Cada mes, una "vaca" —un millón de pesos— se entrega a una persona para que desarrolle un proyecto personal que genere felicidad. La definición de felicidad es enteramente subjetiva: puede ser aprender a tocar un instrumento, reparar la casa de un vecino, empezar un pequeño negocio o simplemente tener una experiencia inolvidable.
-                </p>
-                <p>
-                    En esta nueva etapa, estamos enfocados en la región de Barichara, trabajando de la mano de gestores de confianza que conocen la comunidad y ayudan a descubrir esos proyectos únicos que merecen ser apoyados.
-                </p>
-            </section>
-
-            <section id="historia">
-                <h2>Nuestra Historia</h2>
-                <p>
-                    Vacabacana no es una idea nueva. En su primera etapa, más de 10 proyectos fueron financiados gracias a la contribución de una comunidad de "bacanes". Cada mes, un millón de pesos se convirtió en semilla para sueños tan diversos como la gente que los soñaba. Hoy, revivimos esa fórmula con la misma convicción: que pequeños actos de generosidad pueden generar una felicidad inmensa.
-                </p>
-            </section>
-
-            <section id="contacto">
-                <h2>Contacto</h2>
-                <p>
-                    Si quieres conocer más sobre el proyecto o tienes una idea que compartir, escríbenos a <a href="mailto:hola@vacabacana.co">hola@vacabacana.co</a>.
-                </p>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Vacabacana. Hecho con amor desde Barichara y Malta.</p>
-        </div>
-    </footer>
-
-</body>
-</html>
+            padding:
