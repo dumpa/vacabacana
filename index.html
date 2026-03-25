@@ -71,4 +71,119 @@
 
         /* Main Content */
         main {
-            padding:
+            padding: 20px 0;
+        }
+
+        section {
+            margin-bottom: 30px;
+            padding: 30px;
+            background-color: #fff;
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-left: 5px solid var(--accent-brown); /* Acento lateral marrón */
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            color: var(--primary-brown);
+            margin-top: 0;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        a {
+            color: var(--accent-brown);
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s;
+        }
+
+        a:hover {
+            border-bottom: 2px solid var(--accent-brown);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 0.9rem;
+            color: var(--primary-brown);
+            border-top: 2px solid var(--primary-brown);
+            margin-top: 40px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 10px;
+            }
+            section {
+                padding: 20px;
+            }
+            .logo-container img {
+                max-width: 200px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <!-- Aquí va tu logo -->
+                <img src="https://scontent-mrs2-1.xx.fbcdn.net/v/t39.30808-6/326486652_590850876176611_8559100741913749619_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=1d70fc&_nc_ohc=LcEZThTVJfAQ7kNvwEI9Qv_&_nc_oc=AdrMfKl9udnPwrDQiUlMeBT88b47QHSFdwgd9Ghb9u5ccbYDWTkFYvC2LIitvZrHC7A&_nc_zt=23&_nc_ht=scontent-mrs2-1.xx&_nc_gid=9ha7018pFDO1a1KfLzha_A&_nc_ss=7a32e&oh=00_AfyNKXX1IDL0KjjmRUgWsjHKuQln62B8bLU2H0YkYi9goQ&oe=69C9F028" alt="Logo La Vaca Bacana">
+            </div>
+            <h1>Vacabacana</h1>
+            <p class="tagline">Microfilantropía para generar felicidad.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="que-es">
+                <h2>¿Qué es esto?</h2>
+                <p>
+                    Vacabacana es una fórmula simple de generosidad directa. Cada mes, una "vaca" —un millón de pesos— se entrega a una persona para que desarrolle un proyecto personal que genere felicidad. La definición de felicidad es enteramente subjetiva: puede ser aprender a tocar un instrumento, reparar la casa de un vecino, empezar un pequeño negocio o simplemente tener una experiencia inolvidable.
+                </p>
+                <p>
+                    En esta nueva etapa, estamos enfocados en la región de Barichara, trabajando de la mano de gestores de confianza que conocen la comunidad y ayudan a descubrir esos proyectos únicos que merecen ser apoyados.
+                </p>
+            </section>
+
+            <section id="historia">
+                <h2>Nuestra Historia</h2>
+                <p>
+                    Vacabacana no es una idea nueva. En su primera etapa, más de 10 proyectos fueron financiados gracias a la contribución de una comunidad de "bacanes". Cada mes, un millón de pesos se convirtió en semilla para sueños tan diversos como la gente que los soñaba. Hoy, revivimos esa fórmula con la misma convicción: que pequeños actos de generosidad pueden generar una felicidad inmensa.
+                </p>
+            </section>
+
+            <section id="contacto">
+                <h2>Contacto</h2>
+                <p>
+                    Si quieres conocer más sobre el proyecto o tienes una idea que compartir, escríbenos a <a href="mailto:hola@vacabacana.co">hola@vacabacana.co</a>.
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vacabacana. Hecho con amor desde Barichara y Malta.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
