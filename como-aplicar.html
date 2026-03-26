@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo Aplicar - La Vaca Bacana</title>
+    
+    <!-- Google Fonts: Montserrat y Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --amarillo-principal: #FFD200;
+            --marron-oscuro: #4A3B2A;
+            --marron-acento: #8B5A2B;
+            --gris-fondo: #f9f9f9;
+            --blanco: #ffffff;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--blanco);
+            color: #333;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--marron-oscuro);
+            color: var(--blanco);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        main {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--marron-oscuro);
+            border-bottom: 3px solid var(--amarillo-principal);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--marron-acento);
+            margin-top: 30px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            background-color: var(--gris-fondo);
+            border-left: 5px solid var(--amarillo-principal);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+
+        .process-steps {
+            counter-reset: step-counter;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .process-steps li {
+            position: relative;
+            padding-left: 60px;
+            margin-bottom: 25px;
+            background-color: var(--blanco);
+            border: 1px solid #eee;
+            border-left: 5px solid var(--marron-acento);
+        }
+
+        .process-steps li::before {
+            counter-increment: step-counter;
+            content: counter(step-counter);
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: var(--amarillo-principal);
+            color: var(--marron-oscuro);
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cta-section {
+            background-color: var(--amarillo-principal);
+            color: var(--marron-oscuro);
+            text-align: center;
+            padding: 40px 20px;
+            margin-top: 40px;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--marron-oscuro);
+            color: var(--amarillo-principal);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: bold;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: var(--marron-acento);
+            color: var(--blanco);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: var(--marron-oscuro);
+            color: var(--blanco);
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: var(--amarillo-principal);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Postula a La Vaca Bacana</h1>
+            <p>¿Tienes una idea para generar felicidad en Barichara? Aquí te explicamos cómo postular y ser el próximo proyecto financiado con 1 millón de pesos.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <section>
+            <h2>¿Qué es La Vaca Bacana?</h2>
+            <p>La Vaca Bacana es un proyecto de microfilantropía directa que financia ideas que generen felicidad subjetiva en la comunidad de Barichara. Cada mes, una "vaca" (un millón de pesos colombianos) se entrega a un proyecto único, sin burocracia y con transferencia directa al beneficiario. Buscamos proyectos que iluminen, unan y creen alegría.</p>
+        </section>
+
+        <section>
+            <h2>Las Reglas del Juego</h2>
+            
+            <h3>¿Quiénes pueden postular?</h3>
+            <p>Cualquier persona o grupo de personas con una idea para desarrollar en Barichara o sus veredas aledañas.</p>
+
+            <h3>Requisitos de tu Proyecto:</h3>
+            <ul>
+                <li><strong>Impacto Local:</strong> Debe beneficiar directamente a la comunidad de Barichara.</li>
+                <li><strong>Generador de Felicidad:</strong> El objetivo principal debe ser crear un bienestar subjetivo, alegría o un momento positivo. (Ej: un taller de arte, un concierto en el parque, mejorar un pequeño espacio comunitario, un festival de cometas, etc.).</li>
+                <li><strong>Presupuesto Máximo:</strong> El costo total del proyecto no puede superar <strong>COP 1.000.000</strong>.</li>
+                <li><strong>Ejecución Rápida:</strong> El proyecto debe poder ser ejecutado completamente en el plazo de <strong>un (1) mes</strong>.</li>
+                <li><strong>Disponibilidad:</strong> Debes estar disponible para ejecutar el proyecto durante el mes siguiente a ser seleccionado.</li>
+            </ul>
+
+            <h3>Compromisos del Ganador:</h3>
+            <ul>
+                <li><strong>Ejecución:</strong> Realizar el proyecto tal como fue propuesto.</li>
+                <li><strong>Informe Final:</strong> Enviar un breve informe al finalizar, incluyendo un texto de 200-300 palabras y 3-5 fotos (o un video corto) que muestren los resultados y la felicidad generada. Este informe ayudará a inspirar a otros.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Fechas y Calendario</h2>
+            <p>Para ser considerado en la selección de este mes, tu postulación debe ser enviada dentro del período de aplicación.</p>
+            
+            <h3>Calendario de Postulaciones (Ejemplo para Abril):</h3>
+            <ul>
+                <li><strong>Apertura de Aplicaciones:</strong> 1 de abril</li>
+                <li><strong>Cierre de Aplicaciones:</strong> 20 de abril a las 11:59 PM</li>
+                <li><strong>Período de Curaduría y Votación:</strong> 21 al 25 de abril</li>
+                <li><strong>Anuncio del Ganador:</strong> 26 de abril</li>
+                <li><strong>Desembolso y Ejecución:</strong> A partir del 1 de mayo</li>
+            </ul>
+            <p><em>Este ciclo se repite cada mes. Si no te alcanza este mes, ¡prepárate para el siguiente!</em></p>
+        </section>
+
+        <section>
+            <h2>El Proceso Paso a Paso</h2>
+            <ol class="process-steps">
+                <li><strong>Prepara tu Idea:</strong> Ten claros los detalles de tu proyecto, el presupuesto y cómo medirás su éxito.</li>
+                <li><strong>Llena el Formulario:</strong> Completa todas las secciones del formulario de postulación de manera honesta y clara. ¡Los detalles cuentan!</li>
+                <li><strong>Revisión Inicial:</strong> Nuestro equipo de gestores en Barichara revisará que tu postulación cumpla con los requisitos.</li>
+                <li><strong>Curaduría:</strong> Los proyectos elegibles pasan a una curaduría donde se seleccionan los 3-5 finalistas del mes.</li>
+                <li><strong>Selección Final:</strong> El financiador (El Bacán) elige el proyecto ganador entre los finalistas.</li>
+                <li><strong>¡Felicidades!</strong> Si eres seleccionado, te contactaremos para coordinar el desembolso directo de 1 millón de pesos.</li>
+            </ol>
+        </section>
+
+        <section class="cta-section">
+            <h2>¿Listo para compartir tu idea?</h2>
+            <p>Haz clic en el botón de abajo para acceder al formulario de postulación. Recuerda tener a mano la descripción de tu proyecto, tu presupuesto y los detalles de ejecución.</p>
+            <a href="[AQUÍ VA EL ENLACE A TU GOOGLE FORMS]" class="cta-button" target="_blank">QUIERO POSTULAR MI PROYECTO</a>
+        </section>
+        
+        <section>
+            <h2>¿Tienes Dudas?</h2>
+            <p>Si tienes alguna pregunta sobre el proceso o las bases, no dudes en escribirnos a <strong>hola@vacabacana.co</strong>. Estaremos encantados de ayudarte.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 La Vaca Bacana. Microfilantropía para generar felicidad.</p>
+        <p>Contacto: <a href="mailto:hola@vacabacana.co">hola@vacabacana.co</a></p>
+    </footer>
+
+</body>
+</html>
